@@ -1,0 +1,225 @@
+.hero {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: var(--color-primary);
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  padding: 14px 32px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.review {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-top: -2px;
+  line-height: 1;
+}
+
+.star {
+  color: #ffb400;
+}
+
+.rating-number {
+  font-weight: 200;
+  margin-left: 8px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 30px;
+  margin-top: 48px;
+}
+
+.stats-card {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.1);
+}
+
+.stats-card.image {
+  grid-column: span 3;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 7 / 12;
+}
+
+.stats-card.primary {
+  grid-column: span 2;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  aspect-ratio: 7 / 12;
+  align-self: end;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.stats-card.secondary {
+  grid-column: span 3;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  aspect-ratio: 10 / 8;
+  align-self: end;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+}
+
+.stats-card.third {
+  grid-column: span 2;
+  background-color: var(--accent-color);
+  color: var(--color-primary);
+  aspect-ratio: 7 / 12;
+  align-self: end;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.stats-card.fourth {
+  grid-column: span 3;
+  background-color: var(--color-primary);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 7 / 12;
+  text-align: left;
+  color: var(--color-white);
+  font-size: 130px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.stats-number {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stats-label {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.stats-label1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 40px; /* Add some space below the accent box */
+
+}
+
+.arrow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.arrow-icon svg {
+  color: var(--color-white);
+  transform: scale(0.8);
+}
+
+.accent-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+}
+
+.more-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.stats-icons {
+  position: absolute;
+  top: -40px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle.dark {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.icon-circle.outline {
+  border: 2px solid var(--color-primary);
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.icon-circle.light {
+  background-color: var(--accent-color);
+  color: var(--color-dark);
+}
+
+

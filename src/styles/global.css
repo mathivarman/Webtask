@@ -1,0 +1,43 @@
+:root {
+    /* Colors */
+    --color-primary: #143f44;
+    --color-secondary: #e8f5e9;
+    --color-white: #ffffff;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-border: #eaeaea;
+    --accent-color: #E0FFC6;
+  
+    /* Typography */
+    --font-main: "Inter", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  button {
+    cursor: pointer;
+    font-family: var(--font-main);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  

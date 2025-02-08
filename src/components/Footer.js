@@ -1,38 +1,45 @@
 "use client"
 
-import { Factory, Cog, Shield, Lightbulb, Package, BarChart2, ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react";
+import { GoNorthStar } from "react-icons/go";
+import { HiOutlineViewGrid } from "react-icons/hi";
+import { FiTool } from "react-icons/fi";  // Added
+import { FaShieldAlt } from "react-icons/fa";  // Shield icon from react-icons/fa
+import { BsBox, BsGraphUp } from "react-icons/bs";  // Added
+
+
 import "../styles/footer.css"
 
 const services = [
   {
     title: "Production and Assembly",
     description: "Details on production processes, assembly, capacity, and product types.'",
-    icon: Factory,
+    icon: GoNorthStar,
   },
   {
     title: "Custom Manufacturing",
     description: "Custom product creation with design and customization options.",
-    icon: Cog,
+    icon: HiOutlineViewGrid,
   },
   {
     title: "Quality Control",
     description: "Procedures and systems in place to ensure high product quality.",
-    icon: Shield,
+    icon: FiTool,
   },
   {
     title: "Technology and Innovation",
     description: "Details on the latest manufacturing technologies and ongoing innovations.",
-    icon: Lightbulb,
+    icon: FaShieldAlt,
   },
   {
     title: "Packaging and Logistics",
     description: "Packaging and logistics for shipping to customers and distributors",
-    icon: Package,
+    icon: BsBox,
   },
   {
     title: "Consulting Market Research",
     description: "Services to help companies understand market needs and provide strategic advice.",
-    icon: BarChart2,
+    icon: BsGraphUp,
   },
 ]
 

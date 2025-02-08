@@ -39,11 +39,13 @@
   padding: 14px 32px;
   background-color: transparent;
   color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  border: none;
   border-radius: 40px;
   font-size: 16px;
   font-weight: 500;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .rating-container {
   display: flex;
@@ -150,7 +152,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-top: 40px; /* Add some space below the accent box */
+  margin-top: 60px; /* Add some space below the accent box */
 
 }
 
@@ -177,6 +179,9 @@
   height: 40px;
   background-color: var(--accent-color);
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .more-menu {
@@ -222,4 +227,135 @@
   color: var(--color-dark);
 }
 
+/* Update these styles for the stats card wrapper and floating arrow */
+.stats-card-wrapper {
+  position: relative;
+  grid-column: span 3;
+}
+
+.stats-card.image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 7 / 12;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.1);
+}
+
+.floating-arrow {
+  position: absolute;
+  top: -150px;
+  left: 5%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border: 2px solid black;
+}
+
+.floating-arrow1 {
+  position: absolute;
+  top: -100px;
+  left: 430%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  box-shadow: 0 2px 5px rgba(16, 15, 15, 0.1);
+  z-index: 1;
+  border: 2px solid black; /* Added black rounded border */
+}
+.floating-arrow2 {
+  position: absolute;
+  top: -160px;
+  left: 460%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  box-shadow: 0 2px 5px rgba(16, 15, 15, 0.1);
+  z-index: 1;
+}
+.floating-arrow3 {
+  position: absolute;
+  top: -200px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  box-shadow: 0 2px 5px rgba(16, 15, 15, 0.1);
+  z-index: 1;
+}
+.floating-arrow4 {
+  position: absolute;
+  top: -100px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black);
+  box-shadow: 0 2px 5px rgba(16, 15, 15, 0.1);
+  z-index: 1;
+}
+
+.floating-arrow5 {
+  position: absolute;
+  top: 200px;
+  left: 395%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  box-shadow: 0 2px 5px rgba(16, 15, 15, 0.1);
+  z-index: 1;
+  
+}
+
+
+/* Update the stats-grid to use the wrapper */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 30px;
+  margin-top: 48px;
+}
+
+/* Remove the grid-column from .stats-card.image as it's now applied to the wrapper */
+.stats-card.image {
+  grid-column: unset;
+}
 

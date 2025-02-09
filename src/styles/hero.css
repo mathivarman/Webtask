@@ -152,7 +152,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-top: 60px; /* Add some space below the accent box */
+  margin-top: 60px;
 
 }
 
@@ -194,7 +194,7 @@
 
 .stats-icons {
   position: absolute;
-  top: -40px; /* Adjust as needed */
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -227,7 +227,6 @@
   color: var(--color-dark);
 }
 
-/* Update these styles for the stats card wrapper and floating arrow */
 .stats-card-wrapper {
   position: relative;
   grid-column: span 3;
@@ -261,7 +260,7 @@
   border: 2px solid black;
 }
 
-.floating-arrow1 {
+.righticon1 {
   position: absolute;
   top: -100px;
   left: 430%;
@@ -278,7 +277,7 @@
   z-index: 1;
   border: 2px solid black; /* Added black rounded border */
 }
-.floating-arrow2 {
+.righticon2 {
   position: absolute;
   top: -160px;
   left: 460%;
@@ -294,7 +293,7 @@
   box-shadow: 0 2px 5px rgba(16, 15, 15, 0.1);
   z-index: 1;
 }
-.floating-arrow3 {
+.lefticon2 {
   position: absolute;
   top: -200px;
   left: 40%;
@@ -310,7 +309,7 @@
   box-shadow: 0 2px 5px rgba(16, 15, 15, 0.1);
   z-index: 1;
 }
-.floating-arrow4 {
+.lefticon3 {
   position: absolute;
   top: -100px;
   left: 40%;
@@ -345,17 +344,9 @@
   
 }
 
-
-/* Update the stats-grid to use the wrapper */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   gap: 30px;
   margin-top: 48px;
 }
-
-/* Remove the grid-column from .stats-card.image as it's now applied to the wrapper */
-.stats-card.image {
-  grid-column: unset;
-}
-

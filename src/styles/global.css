@@ -1,5 +1,4 @@
 :root {
-    /* Colors */
     --color-primary: #143f44;
     --color-secondary: #e8f5e9;
     --color-white: #ffffff;
@@ -7,9 +6,6 @@
     --color-text-light: #666666;
     --color-border: #eaeaea;
     --accent-color: #E0FFC6;
-  
-    /* Typography */
-    --font-main: "Inter", sans-serif;
   }
   
   * {

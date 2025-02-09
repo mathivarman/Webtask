@@ -43,16 +43,16 @@ export default function Hero() {
             <div className="floating-arrow">
               <ArrowUpRight size={20} />
             </div>
-            <div className="floating-arrow1">
+            <div className="righticon1">
               <PiWavesBold size={20} />
             </div>
-            <div className="floating-arrow2">
+            <div className="righticon2">
               <BiBarChart size={20} /> 
             </div>
-            <div className="floating-arrow3">
+            <div className="lefticon2">
               <BsStars size={20} /> 
             </div>
-            <div className="floating-arrow4">
+            <div className="lefticon3">
               <IoMdCopy size={20} /> 
             </div>
             <div className="floating-arrow5">

@@ -3,11 +3,9 @@
 import { ArrowUpRight } from "lucide-react";
 import { GoNorthStar } from "react-icons/go";
 import { HiOutlineViewGrid } from "react-icons/hi";
-import { FiTool } from "react-icons/fi";  // Added
-import { FaShieldAlt } from "react-icons/fa";  // Shield icon from react-icons/fa
-import { BsBox, BsGraphUp } from "react-icons/bs";  // Added
-
-
+import { FiTool } from "react-icons/fi";
+import { FaShieldAlt } from "react-icons/fa";
+import { BsBox, BsGraphUp } from "react-icons/bs";
 import "../styles/footer.css"
 
 const services = [
